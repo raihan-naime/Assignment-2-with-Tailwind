@@ -22,16 +22,94 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- css link -->
+     <link rel="stylesheet" href="styles/style.css">
+
     <style>
       .font-inter > {
         font-family: "Inter", sans-serif;
       }
-      .font-noto{
+      .font-noto {
         font-family: "Noto Serif", serif;
       }
     </style>
   </head>
   <body>
-    
+    <header class=""></header>
+    <main class="">
+      <!-- deal section  with tailwind-->
+      <section class="max-w-[1140px] mx-auto mt-20">
+        <div class="flex justify-center items-center">
+          <div class="text-center">
+            <h2 class="text-5xl font-black font-noto text-black">Deals</h2>
+            <p class="text-2xl text-[rgba(0, 0, 0, 0.5)]">
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-3 md:grid-rows-2 text-white max-h-[425px]">
+          <div
+            class="text-center h-[206px] flex justify-center items-center bg-[url(/assets/deal-bloom.png)]  bg-center bg-cover bg-no-repeat rounded-2xl"
+          >
+            <div>
+              <h3 class="text-2xl font-bold">60% Off | Bloom Plant</h3>
+              <p>
+                <a class="font-semibold" href="">Shop Now</a>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="text-center flex justify-center items-center bg-[url(/assets/deal-ana.png)]  bg-center bg-cover bg-no-repeat rounded-2xl"
+          >
+            <div>
+              <h3 class="text-2xl font-bold">30% Off | Ana Plant</h3>
+            <p>
+              <a class="font-semibold" href="">Shop Now</a>
+            </p>
+            </div>
+          </div>
+
+          <div
+            class="md:row-start-1 md:row-end-3 md:col-start-2 md:col-end-4 text-center flex justify-center items-center bg-[url(/assets/deal-zabo.png)]  bg-center bg-cover bg-no-repeat rounded-2xl"
+          >
+            <div>
+              <h3 class="text-2xl font-bold">25% Off | Zabo Plant</h3>
+            <p>
+              <a class="font-semibold" href="">Shop Now</a>
+            </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- deal section with raw css -->
+      <section class="deal-section">
+        <div class="image-container">
+          <div class="bloom-plant">
+            <div>
+              <h3>60% Off | Bloom Plant</h3>
+            <p><a href="">Shop Now</a></p>
+            </div>
+          </div>
+          <div class="ana-plant">
+            <div>
+              <h3>30% Off | Ana  Plant</h3>
+            <p><a href="">Shop Now</a></p>
+            </div>
+          </div>
+          <div class="zabo-plant">
+            <div>
+              <h3>25% Off | Zabo Plant</h3>
+            <p><a href="">Shop Now</a></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
   </body>
 </html>
